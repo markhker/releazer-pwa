@@ -221,6 +221,10 @@ const List = styled.ul`
     cursor: pointer;
 
     a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
       color: ${props => props.theme.neutral900};
       text-decoration: none;
     }
