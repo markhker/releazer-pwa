@@ -13,24 +13,6 @@ export const sortVersions = versions =>
       return tag
     })
 
-export const getLinkHeaders = header => {
-  if (!header) throw new Error('Please provide a header')
-
-  const parts = header.split(',')
-  let links = {}
-  for (let i = 0; i < parts.length; i++) {
-    let section = parts[i].split(';')
-    if (section.length !== 2) {
-      throw new Error('Section could not be splitted')
-    }
-    let url = section[0].replace(/<(.*)>/, '$1').trim()
-    url = url.replace(process.env.GITHUB_API_URL, '')
-    let name = section[1].replace(/rel="(.*)"/, '$1').trim()
-    links[name] = url
-  }
-  return links
-}
-
 const RELEASE_TYPES = {
   alpha: 'Alpha Pre-Release 💣',
   beta: 'Beta Pre-Release 🚧',
