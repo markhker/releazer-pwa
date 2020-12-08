@@ -7,7 +7,7 @@ import CircleLoader from './CircleLoader'
 const Header = ({ onMenuClick, onDeleteclick, title, loading }) => {
   return (
     <HeaderWrapper>
-      <Icon class='menu' name='menu' onClick={onMenuClick} />
+      <Icon className='menu' name='menu' onClick={onMenuClick} />
       <h1>{title}</h1>
       {
         onDeleteclick &&
