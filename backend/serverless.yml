@@ -113,7 +113,7 @@ functions:
   watcher:
     handler: watcher.main
     events:
-      - schedule: cron(0/2 * * * ? *)
+      - schedule: cron(0/30 * * * ? *)
 
 resources:
 # API Gateway Errors
