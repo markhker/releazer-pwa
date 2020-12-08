@@ -7,7 +7,7 @@ import CircleLoader from './CircleLoader'
 const Header = ({ onMenuClick, onDeleteclick, title, loading }) => {
   return (
     <HeaderWrapper>
-      <Icon name='menu' onClick={onMenuClick} />
+      <Icon class='menu' name='menu' onClick={onMenuClick} />
       <h1>{title}</h1>
       {
         onDeleteclick &&
@@ -35,6 +35,10 @@ const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.primary600};
   box-shadow: ${props => props.theme.dp2};
   color: ${props => props.theme.white};
+
+  .hide {
+    cursor: pointer;
+  }
 
   i {
     font-size: 3rem;

@@ -167,6 +167,7 @@ const NavWrapper = styled.div`
     align-self: flex-start;
     margin-left: -20px;
     color: ${props => props.theme.neutral900};
+    cursor: pointer;
   }
 
   .header {
