@@ -1,0 +1,14 @@
+Resources:
+  LibrariesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.librariesTableName}
+      AttributeDefinitions:
+        - AttributeName: libraryId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: libraryId
+          KeyType: HASH
+      ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1

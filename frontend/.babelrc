@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": "last 2 versions, not dead, >0.25%",
+        "node": "8.10"
+      }
+    }],
+    "@babel/react"
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+  ]
+}

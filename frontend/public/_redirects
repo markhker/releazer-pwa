@@ -1,0 +1,8 @@
+/sw.js                        /sw.js                            200
+/manisfest.json               /manisfest.json                   200
+/releases                     /index.html                       200
+/login                     /index.html                       200
+/library/*                    /index.html                       200
+/callback*                    /index.html                       200
+/OneSignalSDKUpdaterWorker.js     /OneSignalSDKUpdaterWorker.js         200
+/OneSignalSDKWorker.js        /OneSignalSDKWorker.js            200

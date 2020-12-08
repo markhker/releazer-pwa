@@ -1,0 +1,6 @@
+{
+  "rules": {
+    "react/jsx-handler-names": 0,
+    "array-bracket-spacing": ["always", { "objectsInArrays": false }]
+  }
+}
